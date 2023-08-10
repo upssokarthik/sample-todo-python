@@ -13,7 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+    - name: Checkout frontend file
+    - uses: actions/checkout@v3
+      with:
+        repository: upssokarthik/static-files
+        path: static-files
     
     - name: Log in to registry
       uses: docker/login-action@v1
