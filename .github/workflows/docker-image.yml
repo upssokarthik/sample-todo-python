@@ -14,11 +14,11 @@ jobs:
 
     steps:
     - name: Checkout current repo
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
     
     
     - name: Checkout frontend file
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
       with:
         repository: upssokarthik/static-files
         path: static-files
