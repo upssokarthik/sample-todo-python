@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <ul>
+        {% for todo in todos %}
+        <li><a href="{% url 'todo_detail' pk=todo.pk %}">{{ todo.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'todo_new' %}">New Todo</a>
+</body>
+</html>

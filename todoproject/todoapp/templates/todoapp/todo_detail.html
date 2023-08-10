@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo Detail</title>
+</head>
+<body>
+    <h1>Todo Detail</h1>
+    <h2>{{ todo.title }}</h2>
+    <p>{{ todo.description }}</p>
+    <p>Completed: {{ todo.completed }}</p>
+    <a href="{% url 'todo_edit' pk=todo.pk %}">Edit</a>
+    <a href="{% url 'todo_delete' pk=todo.pk %}">Delete</a>
+    <a href="{% url 'todo_list' %}">Back to list</a>
+</body>
+</html>
